@@ -8,6 +8,14 @@
 </head>
 
 <body>
+    <!-- O elemento <nav> representa uma seção da página cuja finalidade é fornecer links de navegação como menus e índices. -->
+    <nav>
+        <ul>
+            <li>Sobre</li>
+            <li>Trabalhos realizados</li>
+            <li>Contato</li>
+        </ul>
+    </nav>
     <header>
         <h1>Lívia Gouvêa</h1>
         <p>Faço sites sob encomenda</p>
@@ -24,16 +32,6 @@
     <section>
         <h1>Trabalhos realizados</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
-
-        <!--
-        Utilização do texto alternativo é útil em vários momentos:
-            - Para usuários com deficiencia visual que utilizam leitor de tela.
-            - Quando houver problema com o caminho do arquivo e a imagem não for exibida.
-            - Quando o navegador não suportar o tipo de imagem como Lynx, por exemplo que exibe somente texto
-            - Utilizado pelos mecanismos de pesquisa que podem combinar o texto alternativo com as buscas.
-            - Usuários que desativam a exibção de imagens para reduzir o consumo de dados, especialmente comum em celulares
-            e em países onde a largura de banda é limitada ou cara.
-        -->
         <figure>
             <img src="img/sanfran.jpg" alt="Imagem da ponte de São Francisco">
             <figcaption>São Francisco</figcaption> // Legenda
@@ -47,27 +45,12 @@
             <figcaption>Paris</figcaption>
         </figure>
     </section>
-
-        <!--
-        O atributo type. Isso é opcional, mas é aconselhável incluí-lo.
-        O atributo type contém o tipo do arquivo e os navegadores podem usar pular imediatamente vídeos que não suportam.
-        Se o tipo não estiver incluído, os navegadores carregarão e tentarão reproduzir cada arquivo até encontrar um que funcione,
-        o que obviamente leva tempo e é um uso desnecessário de recursos.
-        -->
-        <video controls>
-            <source src="video/rabbit320.mp4" type="video/mp4">
-            <source src="rabbit320.webm" type="video/webm">
-            <!-- O texto só será exibido em navegadores que não suportam o elemento <video>. -->
-            <p>Seu navegador não suporta o video. Aqui está um <a href="rabbit320.mp4">link para baixar o vídeo</a></p>
-        </video>
-        <!--
-        Outros recursos:
-        - Largura e Altura (width and height): Você pode controlar o tamanho do vídeo com esses atributos ou com CSS.
-        - autoplay: Reprodução automática do vídeo. Não é aconselhável usar pois não tem boa aceitação do usuário
-        - loop: Faz com que o vídeo (ou áudio) comece a ser reproduzido novamente sempre que terminar. Não aconselhável também
-        - muted: Faz com que o vídeo seja reproduzida com o som desligado por padrão.
-        - poster: possibilita exibir uma imagem de capa parao vídeo.
-        -->
+    <video controls>
+        <source src="video/rabbit320.mp4" type="video/mp4">
+        <source src="rabbit320.webm" type="video/webm">
+        <!-- O texto só será exibido em navegadores que não suportam o elemento <video>. -->
+        <p>Seu navegador não suporta o video. Aqui está um <a href="rabbit320.mp4">link para baixar o vídeo</a></p>
+    </video>
     <footer>
         <p>Desenvolvido por Lívia Gouvêa</p>
     </footer>
