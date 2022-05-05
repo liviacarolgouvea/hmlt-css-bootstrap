@@ -8,17 +8,10 @@
 </head>
 
 <body>
-    <!--
-    O elemento <header> representa um contêiner para conteúdo introdutório ou um conjunto de links de navegação.
-    Normalmente contém: título, logo, informações de autoria
-    Nota: Você pode ter vários elementos <header> em um documento HTML
-    No entanto, <header> não pode ser colocado dentro de um <footer>, <address> ou outro elemento <header>.
-    -->
     <header>
         <h1>Lívia Gouvêa</h1>
         <p>Faço sites sob encomenda</p>
     </header>
-    <!-- O elemento <section> define uma seção em um documento - um agrupamento temático de conteúdo, normalmente com um título -->
     <section>
         <h1>Quem sou eu</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -28,10 +21,32 @@
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
             ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </section>
-    <!--
-    O elemento <footer> define um rodapé para um documento ou seção.
-    Normalmente contém: autoria, Contato, Mapa do site, links para retornar ao topo, documentos relacionados
-    -->
+    <section>
+        <h1>Trabalhos realizados</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+
+        <!--
+        Utilização do texto alternativo é útil em vários momentos:
+            - Para usuários com deficiencia visual que utilizam leitor de tela.
+            - Quando houver problema com o caminho do arquivo e a imagem não for exibida.
+            - Quando o navegador não suportar o tipo de imagem como Lynx, por exemplo que exibe somente texto
+            - Utilizado pelos mecanismos de pesquisa que podem combinar o texto alternativo com as buscas.
+            - Usuários que desativam a exibção de imagens para reduzir o consumo de dados, especialmente comum em celulares
+            e em países onde a largura de banda é limitada ou cara.
+        -->
+        <figure>
+            <img src="img/sanfran.jpg" alt="Imagem da ponte de São Francisco">
+            <figcaption>São Francisco</figcaption> // Legenda
+        </figure>
+        <figure>
+            <img src="img/newyork.jpg" alt="Imagem dos edifícios de Nova Iorque">
+            <figcaption>Nova Iorque</figcaption>
+        </figure>
+        <figure>
+            <img src="img/paris.jpg" alt="Imagem da Torre Eiffel em Paris">
+            <figcaption>Paris</figcaption>
+        </figure>
+    </section>
     <footer>
         <p>Desenvolvido por Lívia Gouvêa</p>
     </footer>
