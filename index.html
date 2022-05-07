@@ -82,22 +82,36 @@
         <form method="GET" action="">
             <label>
                 Nome:<br>
-                <input type="text" name="nome"> <br>
+                <input type="text" name="nome"> <br><br>
             </label>
             <label>
                 Email:<br>
-                <input type="text" name="email"><br>
+                <input type="email" name="email" placeholder="email@xyz.com" required><br><br>
+            </label>
+            <label>
+                Data de nascimento:<br>
+                <input type="date" name="dataNascimento"><br><br>
+            </label>
+            <label>
+                Idade:<br>
+                <input type="number" name="idade"><br><br>
             </label>
             <label>
                 Comentário: <br>
-                <textarea name="commentario"rows="5"></textarea><br>
+                <textarea name="commentario"rows="5"></textarea><br><br>
+            </label>
+            <label>
+                Senha: <br>
+                <input type="password" name="senha" pattern="[A-Z]{3}[0-9]{4}" title="A senha deve ter 3 letras maiúsculas e 4 números"><br><br>
             </label>
             <button>Salvar</button>
         </form>
         <!--
-        action: URL de destino do formulário, quando vazia, retorna para a mesma página.
-        method: O método de envio dos dados. GET ou POST
-        input: campo de entrada dos dados
+        O type email restringe o formato de entrada a um email
+        O type date mostra um calendário para a escolha da data
+        O type number restringe o formato de entrada de dados a números
+        O type password esconde a exibição do que é digitado
+        O pattern permite atribuir uma regra para a entrada dos dados
         -->
     </section>
     <footer>
