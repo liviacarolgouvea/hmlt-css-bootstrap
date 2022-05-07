@@ -80,39 +80,36 @@
     <section>
         <h1>Contato</h1>
         <form method="GET" action="">
-            <label>
-                Nome:<br>
-                <input type="text" name="nome"> <br><br>
-            </label>
-            <label>
-                Email:<br>
-                <input type="email" name="email" placeholder="email@xyz.com" required><br><br>
-            </label>
-            <label>
-                Data de nascimento:<br>
-                <input type="date" name="dataNascimento"><br><br>
-            </label>
-            <label>
-                Idade:<br>
-                <input type="number" name="idade"><br><br>
-            </label>
-            <label>
-                Comentário: <br>
-                <textarea name="commentario"rows="5"></textarea><br><br>
-            </label>
-            <label>
-                Senha: <br>
-                <input type="password" name="senha" pattern="[A-Z]{3}[0-9]{4}" title="A senha deve ter 3 letras maiúsculas e 4 números"><br><br>
-            </label>
+            <!-- O elemento <fieldset> é usado para agrupar separar campos dentro do formulário. -->
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label>
+                    Nome:<br>
+                    <input type="text" name="nome"> <br><br>
+                </label>
+                <label>
+                    Email:<br>
+                    <input type="email" name="email" placeholder="email@xyz.com" required><br><br>
+                </label>
+                <label>
+                    Data de nascimento:<br>
+                    <input type="date" name="dataNascimento"><br><br>
+                </label>
+                <label>
+                    Idade:<br>
+                    <input type="number" name="idade"><br><br>
+                </label>
+                <label>
+                    Comentário: <br>
+                    <textarea name="commentario"rows="5"></textarea><br><br>
+                </label>
+                <label>
+                    Senha: <br>
+                    <input type="password" name="senha" pattern="[A-Z]{3}[0-9]{4}" title="A senha deve ter 3 letras maiúsculas e 4 números"><br><br>
+                </label>
+            </fieldset>
             <button>Salvar</button>
         </form>
-        <!--
-        O type email restringe o formato de entrada a um email
-        O type date mostra um calendário para a escolha da data
-        O type number restringe o formato de entrada de dados a números
-        O type password esconde a exibição do que é digitado
-        O pattern permite atribuir uma regra para a entrada dos dados
-        -->
     </section>
     <footer>
         <p>Desenvolvido por Lívia Gouvêa</p>
