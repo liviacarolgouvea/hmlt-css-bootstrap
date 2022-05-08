@@ -4,11 +4,12 @@ body {
     font-size: 15px;
     line-height: 1.8;
     color: #818181;
+    margin: 0px;
 }
 
 h1 {
     font-size: 63px;
-    color: #303030;
+    color: #ffffff;
 }
 
 h2 {
@@ -18,8 +19,15 @@ h2 {
     font-weight: 600;
 }
 
-/* body {
-    font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
-    color: #818181;
-} */
+header{
+    background-color: #f4511e;
+    text-align: center;
+}
+
+header p{
+    color: #ffffff;
+}
+
+section, footer{
+    margin: 40px;
+}
