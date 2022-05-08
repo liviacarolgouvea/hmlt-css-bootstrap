@@ -10,6 +10,7 @@ body {
 h1 {
     font-size: 63px;
     color: #ffffff;
+    margin: 0px;
 }
 
 h2 {
@@ -30,4 +31,29 @@ header p{
 
 section, footer{
     margin: 40px;
+}
+
+
+nav {
+    font-size: 12px;
+    letter-spacing: 4px;
+    height: 10px;
+    background-color: #f4511e;
+    padding-right: 40px;
+    height: 50px;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+}
+
+nav li{
+    float: left;
+}
+
+nav li a{
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
 }
