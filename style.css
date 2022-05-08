@@ -79,3 +79,13 @@ thead th{
     background: #f4511e !important;
     color: #ffffff !important;
 }
+
+#trabalhos-realizados figure{
+    float: left;
+    margin: 10px;
+    padding: 0px;
+}
+
+.videos{
+    text-align: center;
+}
