@@ -71,7 +71,9 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
         <div class="row">
             <figure class="figure col">
-                <img src="img/sanfran.jpg" alt="Imagem da ponte de São Francisco" class="figure-img img-fluid rounded">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="img/sanfran.jpg" alt="Imagem da ponte de São Francisco" class="figure-img img-fluid rounded">
+                </a>
                 <figcaption class="figure-caption">São Francisco</figcaption>
             </figure>
             <figure class="figure col">
@@ -194,4 +196,21 @@
     </footer>
 </body>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">São Francisco</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus leo sed arcu rhoncus pretium. Nulla facilisi. Nulla id gravida erat, sed aliquam augue. Integer neque ipsum, hendrerit vitae congue eu, porta id tellus. Cras mattis porta ante, ac pulvinar neque feugiat sed. Curabitur vel nisi non sapien pulvinar ultricies.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
 </html>
