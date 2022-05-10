@@ -66,7 +66,7 @@
         </div>
     </section>
 
-    <section class="p-5">
+    <section class="p-2">
         <h2>Tabela de valores</h2>
         <table>
             <caption>Descrição dos serviços e respectivos valores</caption>
@@ -92,78 +92,81 @@
             </tbody>
         </table>
     </section>
-    <section class="p-5">
+    <section class="p-2">
         <h2>Contato</h2>
         <form method="GET" action="">
             <!-- O elemento <fieldset> é usado para agrupar separar campos dentro do formulário. -->
             <fieldset>
                 <legend>Dados pessoais</legend>
-                <label>
-                    Nome:<br>
-                    <input type="text" name="nome"> <br><br>
-                </label>
-                <label>
-                    Email:<br>
-                    <input type="email" name="email" placeholder="email@xyz.com" required><br><br>
-                </label>
-                <label>
-                    Data de nascimento:<br>
-                    <input type="date" name="dataNascimento"><br><br>
-                </label>
-                <label>
-                    Idade:<br>
-                    <input type="number" name="idade"><br><br>
-                </label>
-                <label>
-                    Comentário: <br>
-                    <textarea name="commentario"rows="5"></textarea><br><br>
-                </label>
-                <label>
-                    Senha: <br>
-                    <input type="password" name="senha" pattern="[A-Z]{3}[0-9]{4}" title="A senha deve ter 3 letras maiúsculas e 4 números"><br><br>
-                </label>
+                <div class="mb-3">
+                    <label class="form-label" for="nome">Nome:</label>
+                    <input type="text" class="form-control" name="nome" id="nome">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="email">
+                    Email:</label>
+                    <input type="email" class="form-control" name="email" placeholder="email@xyz.com" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="dataNascimento">Data de nascimento:</label>
+                    <input type="date"  class="form-control" name="dataNascimento" id="dataNascimento">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="idade">Idade:</label>
+                    <input type="number"  class="form-control" name="idade" id="idade">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="comentario">Comentário:</label>
+                    <textarea name="commentario" id="comentario"  class="form-control" rows="5"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="senha">Senha:</label>
+                    <input type="password" class="form-control" name="senha" id="senha" pattern="[A-Z]{3}[0-9]{4}" title="A senha deve ter 3 letras maiúsculas e 4 números"><br><br>
+                </div>
             </fieldset>
-            <br>
             <fieldset>
                 <legend>Qual(ais) produto(s) você deseja comprar?</legend>
-                <label>
-                    <br><input type="checkbox" name="siteEstatico" value="Site estático">Site estático<br>
-                </label>
-                <label>
-                    <br><input type="checkbox" name="cms" value="CMS">Site com gerenciamento de conteúdo<br>
-                </label>
-                <label>
-                    <br><input type="checkbox" name="comercioEletronico" value="Comércio Eletrônico">Site com comércio eletrônico<br>
-                </label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="siteEstatico" id="siteEstatico" value="Site estático">
+                    <label class="form-check-label" for="siteEstatico">Site estático</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="cms" id="cms" value="CMS">
+                    <label class="form-check-label" for="cms">Site com gerenciamento de conteúdo</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="comercioEletronico" id="comercioEletronico" value="Comércio Eletrônico">
+                    <label class="form-check-label" for="comercioEletronico">Site com comércio eletrônico</label>
+                </div>
             </fieldset>
             <br>
-            <!--
-            A diferença entre o checkbox e o radio button é que o com checkbox é possível escolher mais de uma opção 
-            e com o radio button somente é possível escolher uma opção
-            -->
             <fieldset>
                 <legend>Escolha a forma de pagamento</legend>
-                <label>
-                    <br><input type="radio" name="cartaoCredito" value="Cartão de crédito">Cartão de crédito<br>
-                </label>
-                <label>
-                    <br><input type="radio" name="boleto" value="Boleto">Boleto<br>
-                </label>
-                <label>
-                    <br><input type="radio" name="pix" value="Pix">Pix<br>
-                </label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="cartaoCredito" id="cartaoCredito" value="Cartão de crédito">
+                    <label class="form-check-label" for="cartaoCredito">Cartão de crédito</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="boleto" id="boleto" value="Boleto">
+                    <label class="form-check-label" id="boleto">Boleto</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="pix" id="pix" value="Pix">
+                    <label class="form-check-label" for="pix">Pix</label>
+                </div>
             </fieldset>
             <br>
             <fieldset>
                 <legend>Escolha o prazo</legend>
-                <select name="prazo">
+                <select name="prazo" class="form-select">
+                    <option selected>Escolha o prazo</option>
                     <option value="Avista">Á vista</option>
                     <option value="5x">5x sem juros</option>
                     <option value="10x">10x com juros</option>
                 </select>
             </fieldset>
             <br>
-            <button>Salvar</button>
+            <button class="btn btn-primary">Salvar</button>
         </form>
     </section>
     </main>
